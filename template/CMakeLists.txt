@@ -1,0 +1,5 @@
+add_subdirectory(00_single_file)
+add_subdirectory(01_multiple_files)
+add_subdirectory(02_multiple_executable)
+add_subdirectory(03_multiple_executable_assert)
+add_subdirectory(04_multiple_executable_gtest)

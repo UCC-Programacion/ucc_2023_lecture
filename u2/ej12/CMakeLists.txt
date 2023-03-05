@@ -1,0 +1,1 @@
+add_executable(${PROJECT_NAME}_u2_ej12 main.cpp)

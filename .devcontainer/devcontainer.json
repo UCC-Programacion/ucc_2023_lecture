@@ -1,0 +1,30 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/cpp
+{
+	"name": "C++",
+	"build": {
+		"dockerfile": "Dockerfile",
+		"args": { 
+			"REINSTALL_CMAKE_VERSION_FROM_SOURCE": "3.24.3" 
+		}
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-vscode.cpptools",
+				"ms-vscode.cpptools-extension-pack",
+				"ms-vscode.cpptools-themes",
+				"ms-vscode.cmake-tools",
+				"twxs.cmake"
+			]
+		}
+	},
+
+	"mounts": [
+		"source=${localWorkspaceFolderBasename}-build,target=${containerWorkspaceFolder}/build,type=volume"
+	],
+
+	"postCreateCommand": "sudo chown vscode build",
+
+	"postStartCommand": "cmake -B build -DCMAKE_BUILD_TYPE=Debug -G Ninja"
+}

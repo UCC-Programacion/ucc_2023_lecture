@@ -1,0 +1,2 @@
+add_executable(${PROJECT_NAME}_template_03_multiple_executable_assert main.cpp mymath.cpp)
+add_executable(${PROJECT_NAME}_template_03_multiple_executable_assert_test main_test.cpp mymath.cpp)

@@ -1,0 +1,1 @@
+add_executable(${PROJECT_NAME}_u5_ej06 main.cpp)

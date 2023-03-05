@@ -1,0 +1,1 @@
+add_executable(${PROJECT_NAME}_template_01_multiple_files main.cpp mymath.cpp)
