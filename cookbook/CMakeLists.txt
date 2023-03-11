@@ -1,0 +1,5 @@
+add_subdirectory(01_swap)
+add_subdirectory(02_random)
+add_subdirectory(03_operators)
+add_subdirectory(04_rule_of_three)
+add_subdirectory(05_inheritance)

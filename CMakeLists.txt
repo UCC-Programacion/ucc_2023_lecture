@@ -10,6 +10,7 @@ enable_testing()
 add_subdirectory(cmake)
 
 add_subdirectory(template)
+add_subdirectory(cookbook)
 
 add_subdirectory(u1)
 add_subdirectory(u2)

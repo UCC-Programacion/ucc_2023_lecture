@@ -1,0 +1,1 @@
+add_executable(${PROJECT_NAME}_cookbook_01 main.cpp)
