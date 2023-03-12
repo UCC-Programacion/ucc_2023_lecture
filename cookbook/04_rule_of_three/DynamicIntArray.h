@@ -5,29 +5,29 @@
 
 namespace cookbook {
 
-class DynamicIntList {
+class DynamicIntArray {
 private:
   int *m_data;
   std::size_t m_size;
 
 public:
-  DynamicIntList(std::size_t);
+  DynamicIntArray(std::size_t);
 
   // See https://en.wikipedia.org/wiki/Rule_of_three_(C%2B%2B_programming)
-  ~DynamicIntList();
-  DynamicIntList(const DynamicIntList &);
-  DynamicIntList &operator=(DynamicIntList); // note: argument passed by value
+  ~DynamicIntArray();
+  DynamicIntArray(const DynamicIntArray &);
+  DynamicIntArray &operator=(DynamicIntArray); // note: argument passed by value
 
   //  DynamicIntList &operator=(const DynamicIntList &); // note: argument
   //  passed by reference
 
-  void swap(DynamicIntList &);
+  void swap(DynamicIntArray &);
 
-  bool operator==(const DynamicIntList &other);
+  bool operator==(const DynamicIntArray &other);
   int &operator[](int index);
   int operator[](int index) const;
 
-  friend std::ostream &operator<<(std::ostream &os, const DynamicIntList &);
+  friend std::ostream &operator<<(std::ostream &os, const DynamicIntArray &);
 };
 
 } // namespace cookbook

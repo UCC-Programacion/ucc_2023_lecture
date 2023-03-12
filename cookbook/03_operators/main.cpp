@@ -1,4 +1,4 @@
-#include "IntList.h"
+#include "IntArray.h"
 #include "Integer.h"
 #include <iostream>
 
@@ -23,22 +23,22 @@ int main() {
             << "++preincrement  " << ++integer1 << std::endl
             << "after " << integer1 << std::endl;
 
-  cookbook::IntList int_list1;
-  cookbook::IntList int_list2;
+  cookbook::IntArray int_array1;
+  cookbook::IntArray int_array2;
 
-  std::cout << int_list1 << std::endl;
-  std::cout << int_list2 << std::endl;
+  std::cout << int_array1 << std::endl;
+  std::cout << int_array2 << std::endl;
 
-  int_list1[0] = 1;
-  std::cout << "int_list1[0] = " << int_list1[0] << std::endl;
-  std::cout << int_list1 << std::endl;
+  int_array1[0] = 1;
+  std::cout << "int_array1[0] = " << int_array1[0] << std::endl;
+  std::cout << int_array1 << std::endl;
 
-  int_list2[2] = 2;
-  std::cout << "int_list2[2] = " << int_list2[2] << std::endl;
-  std::cout << int_list2 << std::endl;
+  int_array2[2] = 2;
+  std::cout << "int_array2[2] = " << int_array2[2] << std::endl;
+  std::cout << int_array2 << std::endl;
 
-  cookbook::IntList int_list3 = int_list1 + int_list2;
-  std::cout << "int_list1 + int_list2 = " << int_list3 << std::endl;
+  cookbook::IntArray int_array3 = int_array1 + int_array2;
+  std::cout << "int_array1 + int_array2 = " << int_array3 << std::endl;
 
   return 0;
 }

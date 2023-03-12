@@ -19,8 +19,8 @@ public:
   Integer &operator++();
   Integer operator++(int);
 
-  friend std::ostream &operator<<(std::ostream &os, const Integer &integer);
-  friend std::istream &operator>>(std::istream &is, Integer &integer);
+  friend std::ostream &operator<<(std::ostream &, const Integer &);
+  friend std::istream &operator>>(std::istream &, Integer &);
 };
 
 } // namespace cookbook

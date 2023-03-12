@@ -1,1 +1,1 @@
-add_executable(${PROJECT_NAME}_cookbook_04 main.cpp DynamicIntList.cpp)
+add_executable(${PROJECT_NAME}_cookbook_04 main.cpp DynamicIntArray.cpp)

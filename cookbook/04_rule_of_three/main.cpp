@@ -1,27 +1,29 @@
-#include "DynamicIntList.h"
+#include "DynamicIntArray.h"
 #include <iostream>
 
 int main() {
-  cookbook::DynamicIntList list1{5};
-  cookbook::DynamicIntList list2 = list1; // copy constructor
+  cookbook::DynamicIntArray int_array1{5};
+  cookbook::DynamicIntArray int_array2 = int_array1; // copy constructor
 
-  std::cout << "list1: " << list1 << std::endl;
-  std::cout << "list2: " << list2 << std::endl;
-  std::cout << "list1 == list2 " << (list1 == list2) << std::endl;
+  std::cout << "int_array1: " << int_array1 << std::endl;
+  std::cout << "int_array2: " << int_array2 << std::endl;
+  std::cout << "int_array1 == int_array2 " << (int_array1 == int_array2)
+            << std::endl;
 
-  list1[2] = 9;
+  int_array1[2] = 9;
 
-  std::cout << "list1: " << list1 << std::endl;
-  std::cout << "list2: " << list2 << std::endl;
-  std::cout << "list1 == list2 " << (list1 == list2) << std::endl;
-  
-  cookbook::DynamicIntList list3{3};
+  std::cout << "int_array1: " << int_array1 << std::endl;
+  std::cout << "int_array2: " << int_array2 << std::endl;
+  std::cout << "int_array1 == int_array2 " << (int_array1 == int_array2)
+            << std::endl;
 
-  std::cout << "list3: " << list3 << std::endl;
-  list3 = list1; // assigment operator
-  list1[4] = 7;
-  std::cout << "list1: " << list1 << std::endl;
-  std::cout << "list3: " << list3 << std::endl;
+  cookbook::DynamicIntArray int_array3{3};
+
+  std::cout << "int_array3: " << int_array3 << std::endl;
+  int_array3 = int_array1; // assigment operator
+  int_array1[4] = 7;
+  std::cout << "int_array1: " << int_array1 << std::endl;
+  std::cout << "int_array3: " << int_array3 << std::endl;
 
   return 0;
 }

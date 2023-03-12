@@ -1,1 +1,1 @@
-add_executable(${PROJECT_NAME}_cookbook_03 main.cpp Integer.cpp IntList.cpp)
+add_executable(${PROJECT_NAME}_cookbook_03 main.cpp Integer.cpp IntArray.cpp)
