@@ -1,1 +1,1 @@
-add_executable(${PROJECT_NAME}_u1_ej02 main.cpp)
+add_executable(${PROJECT_NAME}_u1_ej02 main.cpp utils.cpp)
