@@ -1,4 +1,5 @@
 #include "utils.h"
+#include <cassert>
 #include <iostream>
 
 int main() {
